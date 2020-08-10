@@ -15,7 +15,7 @@ window.createBlogPage = function(blogPage) {
 
 	try {
 		(async () => {
-			const {skylink} = await client.UploadFile(blogFile);
+			const {skylink} = await client.UploadDirectory(blogFile, "blogFile");
 			let displayLink = "/" + skylink + "/";
 			document.getElementById("SkynetLink").href=displayLink;
 			document.getElementById("SkynetLink").text=displayLink;

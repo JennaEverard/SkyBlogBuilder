@@ -160,14 +160,14 @@ window.switchPage = function() {
 	pages[counter].style.display = 'block';
 }
 
-document.addEventListener('keydown', event => {
+/*document.addEventListener('keydown', event => {
 	if(event.keyCode === 37) {
 		pageBack();
 	}
 	if(event.keyCode === 39) {
 		pageForward();
 	}
-})
+})*/
 
 document.addEventListener('keyup', event => {
 	if(document.getElementById("pageThree").style.display == "block") {

@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="./src/main.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan Script">
+
+		<script src="https://kit.fontawesome.com/eb858c52f5.js"></script>
+		<script src="main.js"></script>
+
+		<title>SkyBlog Builder</title>
+	</head>
+	<body>
+		<div id="menu">
+			<ul>
+				<li>
+					<a id="headerText">SkyBlog Builder</a>
+				</li>
+			</ul>
+		</div>
+		<div id="pageOne" class="firstPage pages">
+			<div id="line">
+			</div>
+			<div id="title">
+				<h1 id="titleText">Welcome</h1>
+			</div>
+			<div id="description">
+				<p id="descriptiveText">
+				Welcome to SkyBlog Builder, a Skynet application with a user-friendly interface for designing and deploying blog posts on Skynet. Absolutely no programming knowledge is necessary to publish your blog post - all that is required is an idea! As an added bonus, once the application deploys your blog post, you will have two options: either keep the Skynet link or use your own handshake domain! Happy SkyBlogging :)
+				</p>
+			</div>
+			<div id="instructions">
+				<p id="moveForward">
+				To proceed to the next section, either press the right arrow key or click the button in the bottom right hand corner
+				<br>
+				</p>
+				<p id="moveBack">
+				To return to the previous section, either press the left arrow key or click the button in the bottom left hand corner
+				</p>
+			</div>
+		</div>
+		<div id="pageTwo" class="pages">
+			<div id="line">
+			</div>
+			<div id="title">
+				<h1 id="titleText">Requirements!</h1>
+			</div>
+			<div class="requirementDescription">
+				<p class="requirementText">
+				In order to create your blog post, there are a few steps you must take prior to designing an publishing it.
+				</p>
+			</div>
+			<div class="task">
+				<div class="number">
+					<p>1</p>
+				</div>
+				<div class="taskDescription">
+					<p class="taskText">
+					To publish your blog post with a Handshake name, you will first need to have a Handshake name. To do this, the Namebase Learning Center provides excellent instructions for obtaining Handshake TLDs with Namebase.io. It can be accessed <a href="https://learn.namebase.io/starting-from-zero/how-to-get-a-name">here</a>.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="pageThree" class="lastPage pages">
+			<div id="line">
+			</div>
+			<div id="title">
+				<h1 id="titleText">Design your blog post!</h1>
+			</div>
+			<div id="buildDescription">
+				<p id="buildText">
+					Fill out the options below to customize your blog post. Instructions for each field are provided where necessary. <br>A preyour final blog post is located at the bottom of this page which updates with every entry you provide!
+				</p>
+			</div>
+			<div id="customOptions">
+				<div class="Category" id="op1">
+					<div class="CategoryText">
+						<h2 class="CategoryHeader">Header Background Color</h2>
+						<p class="CategorySubtitle">Please insert a Hex code (i.e. #9A</p>
+					</div>
+					<input	type="text" id="headerColor" name="headerColor">
+				</div>
+				<div class="Category" id="op2">
+					<div class="CategoryText">
+						<h2 class="CategoryHeader">Title of Article</h2>
+					</div>
+					<textarea rows = "5" cols = "60" id="articleTitle" name = "articleTitle"></textarea>
+				</div>
+				<div class="Category" id="op3">
+					<div class="CategoryText">
+						<h2 class="CategoryHeader">Text Color of Title</h2>
+						<p class="CategorySubtitle">Please insert a Hex code (i.e. #9A8C98)</p>
+					</div>
+					<input	type="text" id="titleColor" name="titleColor">
+				</div>
+				<div class="Category" id="op4">
+					<div class="CategoryText">
+						<h2 class="CategoryHeader">Page Background Color</h2>
+						<p class="CategorySubtitle">Please insert a Hex code (i.e. #9A8C98)</p>
+					</div>
+					<input	type="text" id="pageColor" name="pageColor">
+				</div>
+				<div class="Category" id="op5">
+					<div class="CategoryText">
+						<h2 class="CategoryHeader">Author Name</h2>
+					</div>
+					<input	type="text" id="authorName" name="authorName">
+				</div>
+				<div class="Category" id="op6">
+					<div class="CategoryText">
+						<h2 class="CategoryHeader">Text Color of Author Name</h2>
+						<p class="CategorySubtitle">Please insert a Hex code (i.e. #9A8C98)</p>
+					</div>
+					<input	type="text" id="authorColor" name="authorColor">
+				</div>
+				<div class="Category" id="op7">
+					<div class="CategoryText">
+						<h2 class="CategoryHeader">Color of Divider between Author and Date</h2>
+						<p class="CategorySubtitle">Please insert a Hex code (i.e. #9A8C98)</p>
+					</div>
+					<input	type="text" id="dividerColor" name="dividerColor">
+				</div>
+				<div class="Category" id="op8">
+					<div class="CategoryText">
+						<h2 class="CategoryHeader">Publishing Date</h2>
+					</div>
+					<input	type="text" id="publishingDate" name="publishingDate">
+				</div>
+				<div class="Category" id="op9">
+					<div class="CategoryText">
+						<h2 class="CategoryHeader">Text Color of Publishing Date</h2>
+						<p class="CategorySubtitle">Please insert a Hex code (i.e. #9A8C98)</p>
+					</div>
+					<input	type="text" id="dateColor" name="dateColor">
+				</div>
+				<div class="Category" id="op10">
+					<div class="CategoryText">
+						<h2 class="CategoryHeader">Content</h2>
+						<p class="CategorySubtitle">Copy and paste the content of your post below</p>
+					</div>
+					<textarea rows = "10" cols = "80" id="pageContent" name = "pageContent"></textarea>
+				</div>
+				<div class="Category" id="op11">
+					<div class="CategoryText">
+						<h2 class="CategoryHeader">Text Color of Content</h2>
+						<p class="CategorySubtitle">Please insert a Hex code (i.e. #9A8C98)</p>
+					</div>
+					<input	type="text" id="contentColor" name="contentColor">
+				</div>
+			</div>
+			<h1 id="previewHeader">Preview of Final Blog Post:</h1>
+			<div id="preview">
+				<iframe id="previewFrame" src="/PreviewTest"></iframe>
+			</div>
+			<div id="submitBlog">
+				<button type="button" id="blogButton" onclick=makeFile()>Generate Blog Post</button>
+			</div>
+		</div>
+		<div id="flipper">
+			<div id="leftflipper">
+				<a onclick="pageBack()"><i class="fa fa-arrow-circle-left" id="leftFlipIcon" aria-hidden="true"></i></a>
+			</div>
+			<div id="rightflipper">
+				<a onclick="pageForward()"><i class="fa fa-arrow-circle-right" id="rightFlipIcon" aria-hidden="true"></i></a>
+			</div>
+		</div>
+		<div id="PopUpWrapper">
+			<div id="PopUpDiv">
+				<h1>Your Blog Post is ready!</h1>
+				<p>Click the link below to view your site
+				<br>
+				<a id="SkynetLink">dshfjksdfsdfsdfsdfsdfsf.com</a>
+				</p>
+				<button id="closeButton" onclick="closeButton()">Close</button>
+			</div>
+		</div>
+	</body>
+</html>

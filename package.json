@@ -1,0 +1,20 @@
+{
+  "name": "skyblogbuilder",
+  "version": "1.0.0",
+  "description": "Skynet app to design and deploy a blog post to Skynet with the option of using a handshake domain",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^4.2.1",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "skynet-js": "^0.1.0"
+  }
+}

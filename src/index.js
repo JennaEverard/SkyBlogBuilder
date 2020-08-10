@@ -7,11 +7,13 @@ import {
 const client = new SkynetClient();
 
 window.createBlogPage = function(blogPage) {
-	const pageContent = blogPage;
-	console.log(pageContent.innerHTML);
+	const toUpload = blogPage;
+	
 	const blogFile = {
-		"index.html": new File([pageContent], "index.html", {type: "text/html"}),
+		"index.html": new File([toUpload], "index.html", {type: "text/html"}),
 	}
+
+	console.log(toUpload);
 
 	console.log(blogFile);
 
@@ -119,7 +121,7 @@ window.makeFile = function() {
 	file.body.appendChild(previewArticleHeader);
 	file.body.appendChild(previewArticle);
 		
-	createBlogPage(file);
+	createBlogPage(file.documentElement);
 	displayPopUp();
 }
 

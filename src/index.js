@@ -9,9 +9,13 @@ const client = new SkynetClient();
 window.createBlogPage = function(blogPage) {
 	const pageContent = blogPage;
 
+	console.log(pageContent);
+
 	const blogFile = {
 		"index.html": new File([pageContent], "index.html", {type: "text/html"}),
 	}
+
+	console.log(blogFile);
 
 	try {
 		(async () => {

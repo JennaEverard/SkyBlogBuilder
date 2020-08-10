@@ -7,7 +7,7 @@ import {
 const client = new SkynetClient();
 
 window.createBlogPage = function(blogPage) {
-	const toUpload = blogPage;
+	const toUpload = blogPage.insertAdjacentHTML('beforebegin', '<!doctype html>');
 	
 	const blogFile = {
 		"index.html": new File([toUpload], "index.html", {type: "text/html"}),
@@ -120,7 +120,7 @@ window.makeFile = function() {
 	file.body.appendChild(previewMenu);
 	file.body.appendChild(previewArticleHeader);
 	file.body.appendChild(previewArticle);
-		
+	
 	createBlogPage(file.documentElement);
 	displayPopUp();
 }

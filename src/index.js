@@ -2,7 +2,7 @@ import "./main.css";
 
 import {
 	SkynetClient
-} from "skynet.js"'
+} from "skynet-js";
 
 const client = new SkynetClient();
 
@@ -17,9 +17,11 @@ window.createBlogPage = function(blogPage) {
 		(async () => {
 			const {skylink} = await client.UploadFile(blogFile);
 			let displayLink = "/" + skylink + "/";
-			document.getElementById("").href=displayLink;
-			document.getElementById("").innerHTML=displayLink;
-		}
+			document.getElementById("SkynetLink").href=displayLink;
+			document.getElementById("SkynetLink").text=displayLink;
+		})();
+	} catch(error) {
+		alert(error);
 	}
 }
 

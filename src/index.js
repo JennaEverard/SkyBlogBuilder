@@ -7,7 +7,7 @@ import {
 const client = new SkynetClient();
 
 window.createBlogPage = function(blogPage) {
-	const toUpload = blogPage.insertAdjacentHTML('beforebegin', '<!doctype html>');
+	const toUpload = blogPage;
 	
 	const blogFile = {
 		"index.html": new File([toUpload], "index.html", {type: "text/html"}),

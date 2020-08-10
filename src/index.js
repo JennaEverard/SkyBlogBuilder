@@ -8,7 +8,7 @@ const client = new SkynetClient();
 
 window.createBlogPage = function(blogPage) {
 	const pageContent = blogPage;
-
+	console.log(pageContent.innerHTML);
 	const blogFile = {
 		"index.html": new File([pageContent], "index.html", {type: "text/html"}),
 	}

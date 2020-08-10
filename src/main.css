@@ -260,6 +260,7 @@ body {
 #PopUpDiv a {
 	text-decoration: underline;
 	font-style: italic;
+	color: white;
 }
 #PopUpDiv a:hover {
 	cursor: pointer;

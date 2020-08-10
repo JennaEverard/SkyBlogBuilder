@@ -25,7 +25,7 @@ window.createBlogPage = function(blogPage) {
 	}
 }
 
-function makeFile() {
+window.makeFile = function() {
 	var iFrame = document.getElementById("previewFrame");
 				
 	var file = document.implementation.createHTMLDocument("Preview.html");
@@ -121,27 +121,27 @@ function makeFile() {
 	displayPopUp();
 }
 
-function displayPopUp() {
+window.displayPopUp = function() {
 		document.getElementById("PopUpWrapper").style.display="flex";
 }
 
-function closeButton() {
+window.closeButton = function() {
 		document.getElementById("PopUpWrapper").style.display="none";
 }
 
 
 var counter = 0;
 
-function pageBack() {
+window.pageBack = function() {
 	counter--;
 	switchPage();
 }
-function pageForward() {
+window.pageForward = function() {
 	counter++;
 	switchPage();
 }
 
-function switchPage() {
+window.switchPage = function() {
 	var index;
 	var pages = document.getElementsByClassName("pages");
 	if(counter >= pages.length) {

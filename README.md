@@ -11,7 +11,7 @@
 The deployed application can be accessed and used with the following link:
 * [https://siasky.net/DAAZ1pRlm3lqOE2KwmBxC7jspQkMCmFBwLn68WcR_FMrkg](https://siasky.net/DAAZ1pRlm3lqOE2KwmBxC7jspQkMCmFBwLn68WcR_FMrkg)
 ## How to Use
-#### When the application first loads, the home page (picture below) will be displayed. There will be a short introduction paragraph followed by two arrows, which will act as navigation buttons throughout the entire application.
+#### When the application first loads, the home page (pictured below) will be displayed. There will be a short introduction paragraph followed by two arrows, which will act as navigation buttons throughout the entire application.
 ![Image of Home Page](/READMEimages/Image1.PNG)
 #### On the second screen, the application will provide further guidance on the user requirements. If a user wants to publish their blog post with a Handshake domain, they will need to follow the step(s).
 ![Image of Home Page](/READMEimages/Image2.PNG)

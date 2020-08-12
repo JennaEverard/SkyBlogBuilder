@@ -71,7 +71,7 @@
 				</p>
 			</div>
 		</div>
-		<div id="pageThree" class="lastPage pages">
+		<div id="pageThree" class="pages">
 			<div id="line">
 			</div>
 			<div id="title">
@@ -166,6 +166,44 @@
 				<button type="button" id="blogButton" onclick="makeFile()">Generate Blog Post</button>
 			</div>
 		</div>
+
+		<div id="pageFour" class="lastPage pages">
+			<div id="line">
+			</div>
+			<div id="title">
+				<h1 id="titleText">Using a Handshake Name</h1>
+			</div>
+			<div class="requirementDescription" id="fourthPageReqDescription">
+				<p class="requirementText">To use your handshake name, you will need to modify the DNS records for it. In the following steps I will guide you through this process!</p>
+			</div>
+			<div id="customOptions">
+				<div class="Category" id="customskylink">
+					<div class="CategoryText">
+						<h2 class="CategoryHeader">Your Skylink: </h2>
+					</div>
+					<input	type="text" id="valueOfSkylink" name="headerColor" value="">
+				</div>
+				<div class="Category" id="op2">
+					<div class="CategoryText">
+						<h2 class="CategoryHeader">Your Handshake Name: </h2>
+					</div>
+					<input	type="text" id="handshakeName" name="handshakeName">
+				</div>
+			</div>
+			<div class="hnstask">
+				<ol>
+					<li class="taskText">Fill out the above fields (the first should be filled out for you) and then log into your <a href="https://www.namebase.io/">Namebase</a> account. On your dashboard, you should see a box labeled 'Your Domains'. In this box should be a list of your domains (if you don't see them all, you may need to click 'Manage All'). Next to the domain you want to use, click the blue 'Edit DNS' link.</li>
+					<li class="taskText">Scroll down to the 'Blockchain DNS records' category and click 'Add new record' (note: this transaction will have a sm).</li>
+					<li class="taskText">For the type, select TXT. For the value/data, paste the following: <a id="Skylink"></a></li>
+					<li class="taskText">Click save and wait for your changes to finish syncing</li>
+				</ol>
+			</div>
+			<div class="requirementDescription">
+				<p class="requirementText" id="finalText">You can now access your website at the following url:<br></p>
+				<p class="requirementText"><a id="finalBlogLink"></a></p>
+			</div>
+		</div>
+
 		<div id="flipper">
 			<div id="leftflipper">
 				<a onclick="pageBack()"><i class="fa fa-arrow-circle-left" id="leftFlipIcon" aria-hidden="true"></i></a>
@@ -179,8 +217,9 @@
 				<h1>Your Blog Post is ready!</h1>
 				<p>Click the link below to view your site
 				<br>
-				<a id="SkynetLink">dshfjksdfsdfsdfsdfsdfsf.com</a>
+				<a id="SkynetLink">loading...(you may need to hover over me!)</a><br><br>
 				</p>
+				<p>Be sure to save your link. If you would like to use your Handshake name, close this window and continue to the next page!</p>
 				<button id="closeButton" onclick="closeButton()">Close</button>
 			</div>
 		</div>

@@ -20,7 +20,7 @@ window.createBlogPage = function(blogPost, backgroundColor) {
 					<script src="https://kit.fontawesome.com/eb858c52f5.js"></script>
 					<title>Builder</title>
 				</head>
-				<body id="previewBody" style="padding: 0px; margin: 0px; border: 0px; background-color: ` + backgroundColor + '>' + blogPost + '</body> </html>';
+				<body id="previewBody" style="padding: 0px; margin: 0px; border: 0px; background-color: ` + backgroundColor + '">' + blogPost + '</body> </html>';
 
 	console.log(toUpload);
 	

@@ -32,9 +32,9 @@ window.createBlogPage = function(blogPost, backgroundColor) {
 		(async () => {
 			const {skylink} = await client.uploadDirectory(blogFile, "blogFile");
 			let displayLink = "/" + skylink + "/";
-			document.getElementById("SkynetLink").href=displayLink;
-			document.getElementById("SkynetLink").text=displayLink;
-			document.getElementById("valueOfSkylink").value = displayLink;
+			document.getElementById("SkynetLink").href="https://siasky.net" + displayLink;
+			document.getElementById("SkynetLink").text="https://siasky.net" + displayLink;
+			document.getElementById("valueOfSkylink").value = "https://siasky.net" + displayLink;
 			document.getElementById("Skylink").innerHTML = skylink;
 		})();
 	} catch(error) {

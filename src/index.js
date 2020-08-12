@@ -35,6 +35,7 @@ window.createBlogPage = function(blogPost, backgroundColor) {
 			document.getElementById("SkynetLink").href=displayLink;
 			document.getElementById("SkynetLink").text=displayLink;
 			document.getElementById("valueOfSkylink").value = displayLink;
+			document.getElementById("Skylink").innerHTML = skylink;
 		})();
 	} catch(error) {
 		alert(error);

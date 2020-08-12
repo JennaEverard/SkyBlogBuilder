@@ -6,16 +6,27 @@ import {
 
 const client = new SkynetClient();
 
-window.createBlogPage = function(blogPage) {
-	const toUpload = blogPage;
+window.createBlogPage = function(blogPost, backgroundColor) {
+	const toUpload = `
+		<!DOCTYPE html> 
+			<html xmlns:th="http://www.thymeleaf.org"> 
+				<head>
+					<meta charset="ISO-8859-1" />
+					<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+					<meta name="viewport" content="width=device-width, initial-scale=1" />
+					<link rel="stylesheet" th:href="@{/css/PreviewTest.css}" />
+					<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+					<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan Script">
+					<script src="https://kit.fontawesome.com/eb858c52f5.js"></script>
+					<title>Builder</title>
+				</head>
+				<body id="previewBody" style="padding: 0px; margin: 0px; border: 0px; background-color: ` + backgroundColor + '>' + blogPost + '</body> </html>';
+
+	console.log(toUpload);
 	
 	const blogFile = {
 		"index.html": new File([toUpload], "index.html", {type: "text/html"}),
 	}
-
-	console.log(toUpload);
-
-	console.log(blogFile);
 
 	try {
 		(async () => {
@@ -23,6 +34,7 @@ window.createBlogPage = function(blogPage) {
 			let displayLink = "/" + skylink + "/";
 			document.getElementById("SkynetLink").href=displayLink;
 			document.getElementById("SkynetLink").text=displayLink;
+			document.getElementById("valueOfSkylink").value = displayLink;
 		})();
 	} catch(error) {
 		alert(error);
@@ -53,6 +65,7 @@ window.makeFile = function() {
 	previewHeaderText.style.padding = "0";
 	previewHeaderText.style.margin = "0";
 	previewHeaderText.style.border = "0";
+	previewHeaderText.style.fontFamily = "Raleway";
 			
 	previewHeaderText.innerHTML = iFrame.contentWindow.document.getElementById("previewHeaderText").innerHTML;
 				
@@ -69,6 +82,7 @@ window.makeFile = function() {
 	previewName.style.padding = "0";
 	previewName.style.margin = "0";
 	previewName.style.border = "0";
+	previewName.style.fontFamily = "Raleway";
 				
 	previewName.innerHTML = iFrame.contentWindow.document.getElementById("previewName").innerHTML;
 				
@@ -80,6 +94,9 @@ window.makeFile = function() {
 	previewDivider.style.padding = "0 1.5%";
 	previewDivider.style.margin = "0";
 	previewDivider.style.border = "0";
+	previewDivider.style.fontFamily = "Raleway";
+
+	previewDivider.innerHTML = "|";
 				
 	var previewDate = file.createElement("p");
 	previewDate.style.color = iFrame.contentWindow.document.getElementById("previewDate").style.color;
@@ -90,6 +107,7 @@ window.makeFile = function() {
 	previewDate.style.margin = "0";
 	previewDate.style.border = "0";
 	previewDate.style.fontStyle = "italic";
+	previewDate.style.fontFamily = "Raleway";
 			
 	previewDate.innerHTML = iFrame.contentWindow.document.getElementById("previewDate").innerHTML;
 				
@@ -106,6 +124,7 @@ window.makeFile = function() {
 	previewArticleText.style.padding = "0";
 	previewArticleText.style.margin = "0";
 	previewArticleText.style.whiteSpace = "pre-wrap";
+	previewArticleText.style.fontFamily = "Raleway";
 				
 	previewArticleText.innerHTML = iFrame.contentWindow.document.getElementById("previewArticleText").innerHTML;
 				
@@ -121,7 +140,7 @@ window.makeFile = function() {
 	file.body.appendChild(previewArticleHeader);
 	file.body.appendChild(previewArticle);
 	
-	createBlogPage(file.documentElement);
+	createBlogPage(file.body.innerHTML, file.body.style.backgroundColor);
 	displayPopUp();
 }
 
@@ -158,6 +177,9 @@ window.switchPage = function() {
 		pages[index].style.display = 'none';
 	}
 	pages[counter].style.display = 'block';
+	if (counter == 2) {
+		updatePrev();
+	}
 }
 
 /*document.addEventListener('keydown', event => {
@@ -172,6 +194,11 @@ window.switchPage = function() {
 document.addEventListener('keyup', event => {
 	if(document.getElementById("pageThree").style.display == "block") {
 		updatePrev();
+	}
+	if(document.getElementById("pageFour").style.display == "block") {
+		var toUpdate = document.getElementById("finalBlogLink");
+		toUpdate.href = "https://siasky.net/hns/" + document.getElementById("handshakeName").value;
+		toUpdate.innerHTML = "https://siasky.net/hns/" + document.getElementById("handshakeName").value;
 	}
 })
 

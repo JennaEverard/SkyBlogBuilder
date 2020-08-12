@@ -346,3 +346,21 @@ body {
 	color: #3d405b;
 	white-space: pre-wrap;
 }
+#pageFour {
+	display: none;
+}
+#fourthPageReqDescription {
+	padding: 1% 2% !important;
+}
+.hnstask ol {
+	list-style-position: inside;
+}
+.hnstask li {
+	font-size: 18px;
+	padding-bottom: 0.5%;
+	padding-top: 0.5%;
+}
+#finalText {
+	font-weight: bold;
+	font-size: 22px;
+}

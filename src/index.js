@@ -6,7 +6,7 @@ import {
 
 const client = new SkynetClient();
 
-window.createBlogPage = function(blogPost, backgroundColor) {
+window.createBlogPage = function(blogPost, backgroundColor, title) {
 	const toUpload = `
 		<!DOCTYPE html> 
 			<html xmlns:th="http://www.thymeleaf.org"> 
@@ -18,7 +18,7 @@ window.createBlogPage = function(blogPost, backgroundColor) {
 					<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 					<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan Script">
 					<script src="https://kit.fontawesome.com/eb858c52f5.js"></script>
-					<title>Builder</title>
+					<title>` + title + `</title>
 				</head>
 				<body id="previewBody" style="padding: 0px; margin: 0px; border: 0px; background-color: ` + backgroundColor + '">' + blogPost + '</body> </html>';
 
@@ -69,6 +69,7 @@ window.makeFile = function() {
 	previewHeaderText.style.fontFamily = "Raleway";
 			
 	previewHeaderText.innerHTML = iFrame.contentWindow.document.getElementById("previewHeaderText").innerHTML;
+	var title = previewHeaderText.innerHTML;
 				
 	var previewArticleHeader = file.createElement("div");
 	previewArticleHeader.style.padding = "3% 0 4.5% 3.1%";
@@ -141,7 +142,7 @@ window.makeFile = function() {
 	file.body.appendChild(previewArticleHeader);
 	file.body.appendChild(previewArticle);
 	
-	createBlogPage(file.body.innerHTML, file.body.style.backgroundColor);
+	createBlogPage(file.body.innerHTML, file.body.style.backgroundColor, title);
 	displayPopUp();
 }
 

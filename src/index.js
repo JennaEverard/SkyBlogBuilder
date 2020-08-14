@@ -118,6 +118,7 @@ window.makeFile = function() {
 	previewArticle.style.lineHeight = "1.5";
 	previewArticle.style.overflowWrap = "anywhere";
 	previewArticle.style.padding = "0 3%";
+	previewArticle.style.paddingBottom = "3%";
 	previewArticle.style.margin = "0";
 	previewArticle.style.border = "0";
 				

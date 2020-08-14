@@ -7,9 +7,11 @@
 * @JennaEverard
 ## Demo Video
 *Coming Soon*
+## Example Blog Post from Demo Video
+[https://siasky.net/hns/concentrativemovementtherapy/](https://siasky.net/hns/concentrativemovementtherapy/)
 ## How to Access
 The deployed application can be accessed and used with the following link:
-* [https://siasky.net/DAAoAlTQet7LjntVojRbNuP0-_ELoG6jepG4Vry2RwHtyQ](https://siasky.net/DAAoAlTQet7LjntVojRbNuP0-_ELoG6jepG4Vry2RwHtyQ)
+* [https://siasky.net/DADAgjHeqGnQ1hIEET54YyIZhBN_oz51HMogZsLiS60KTA](https://siasky.net/DADAgjHeqGnQ1hIEET54YyIZhBN_oz51HMogZsLiS60KTA)
 ## How to Use
 #### When the application first loads, the home page (pictured below) will be displayed. There will be a short introduction paragraph followed by two arrows, which will act as navigation buttons throughout the entire application.
 ![Image of Home Page](/READMEimages/Image1.PNG)

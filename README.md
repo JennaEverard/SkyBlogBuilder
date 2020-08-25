@@ -3,6 +3,8 @@
 ## About
 * SkyBlog Builder is a Skynet application built for the [Own The Internet Hackathon](https://gitcoin.co/hackathon/own-the-internet/onboard) hosted by [Sia](https://siasky.net/) and [Namebase](https://www.namebase.io/). 
 * The application contains HTML, CSS, and Node.js code and was built using the module bundler [webpack](https://webpack.js.org/).
+## Latest Updates
+* 24/08/2020: SkyBlog Builder now uses css-loader version **4.2.2**
 ## Contributors
 * @JennaEverard
 ## Demo Video

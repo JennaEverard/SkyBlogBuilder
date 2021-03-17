@@ -2,6 +2,7 @@
 > A user-friendly interface for designing and deploying blog posts on Skynet with instructions for using Namebase to publish under a personal Handshake domain. This application can also be found in the [Skynet Appstore](https://skynethub.io/_B3VrECGOHPEAFknVQwj_vWsyaX_8iIRuB_TL09cuj9uZQ/index.html#/apps/all)!
 ## About
 * SkyBlog Builder is a Skynet application built for the [Own The Internet Hackathon](https://gitcoin.co/hackathon/own-the-internet/onboard) hosted by [Sia](https://siasky.net/) and [Namebase](https://www.namebase.io/) where it was [selected as a Finalist and won a Judges Choice Award!](https://siasky.net/NACHEsIAD7O39VGGNjX35CLewHumJWP_VAGHpdI2dLim7w)
+* Watch the live demo [here](https://www.youtube.com/watch?v=x1s-KGPlcJc) (timestamp: 46:00 - 53:50)
 * The application contains HTML, CSS, and Node.js code and was built using the module bundler [webpack](https://webpack.js.org/).
 ## Latest Updates
 * 24/08/2020: SkyBlog Builder now uses css-loader version **4.2.2**
